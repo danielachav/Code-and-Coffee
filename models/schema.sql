@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS coffeeandcode_db;
+CREATE DATABASE coffeeandcode_db;
+
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;
