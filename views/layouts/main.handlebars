@@ -1,15 +1,194 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Code&Coffee</title>
+    <!--Required Meta tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <!--Style Sheets-->
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    {{!-- <link rel="stylesheet" type="text/css" href="/styles/login.css"> --}}
+    <!--Fonts Link-->
+    <link href="fonts/Aileron-Thin.otf" rel="stylesheet">
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#"></a>
+      <img src="img/logo2.png" alt="logo" style="width:70px; height:55px;">
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Signup</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    {{{body}}}
+<!--LOGIN SECTION-->
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-  <title>Home Page</title>
-</head>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
 
-<body>
-  {{{body}}}
-</body>
+{{!-- <!-- Modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> --}}
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        {{!-- <div id="id01" class="modal">
+​
+            <form class="modal-content animate" action="/action_page.php"
+                method="post">
+                <div class="imgcontainer">
+                    <span
+                        onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal">&times;</span>
+                    <img src="logo2.png" alt="logo" class="avatar">
+                    <h5>Code&Coffee</h5>
+                </div>
+​
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname"
+                        required>
+​
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password"
+                        name="psw" required>
+​
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked"
+                            name="remember"> Remember me
+                    </label>
+                </div>
+​
+                <div class="container" style="background-color: rgba(2, 2, 2, 0.5);">
+                    <button type="button"
+                        onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+​
+        <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+              
+       </script>
+​ --}}
+
+{{!-- 
+<!--SIGNUP SECTION-->
+<div id="id02" class="modal">
+​
+        <form class="modal-content animate" action="/action_page.php"
+            method="post">
+            <div class="imgcontainer">
+                <span
+                    onclick="document.getElementById('id02').style.display='none'"
+                    class="close" title="Close Modal">&times;</span>
+                <img src="logo2.png" alt="logo" class="avatar">
+                <h5>Join us to meet & collaborate with developers in your area!</h5>
+            </div>
+​
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname"
+                    required>
+​
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="Email"
+                        required>
+​
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password"
+                    name="psw" required>
+​
+                    <label for="job-title"><b>Job Title</b></label>
+                    <input type="text" placeholder="title"
+                        name="job-title" required>
+                
+                        <label for="Location"><b>Location</b></label>
+                        <input type="text" placeholder="City"
+                            name="location" required>
+​
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked"
+                        name="remember"> Remember me
+                </label>
+            </div>
+​
+            <div class="container" style="background-color: rgba(2, 2, 2, 0.5);">
+                <button type="button"
+                    onclick="document.getElementById('id02').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+​ --}}
+    {{!-- <script>
+            // Get the modal
+            var modal = document.getElementById('id02');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+          
+   </script> --}}
+  </body>
 </html>
+

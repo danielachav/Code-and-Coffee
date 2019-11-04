@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "coffeeandcode_db",
+    "database": "coffeeAndCode_db",
     "host": "localhost",
     "dialect": "mysql"
   },

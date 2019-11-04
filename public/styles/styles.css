@@ -1,3 +1,59 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+.header-container {
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+.bg-dark {
+  background-color: rgba(139, 139, 139, 0.5);
+}
+.title {
+background-image: url("/img/backgroundCoffee.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+margin-left: auto;
+padding-top: 180px;
+padding-bottom: 250px;
+height: 600px;
+}
+img {
+  width: 300px;
+  height: 320px;
+}
+h1 {
+color: white;
+background-color: rgba(160, 160, 160, 0.5);
+font-family: 'Aileron-Thin';
+font-size: 90px;
+margin-bottom: 0;
+margin-left: 15%;
+margin-right: 15%;
+}
+h3 {
+color: rgb(0, 0, 0);
+background-color: rgba(160, 160, 160, 0.5);
+font-family: 'Aileron-Thin';
+letter-spacing: .3cm;
+font-size: 25px;
+margin-bottom: 0;
+margin-left: 15%;
+margin-right: 15%;
+}
+h4 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(160, 160, 160, 0.5);
+  font-family: 'Aileron-Thin';
+  font-size: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+@font-face {
+  font-family: "Aileron-Thin";
+  src: url(fonts/Aileron-Thin.otf) format("truetype");
+}

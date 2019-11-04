@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Code-and-Coffee
 a web app community built specifically to allow coders/developers to collaborate with each other over coffee.
 
@@ -191,3 +192,7 @@ Project Link: [https://github.com/github_username/repo](https://github.com/githu
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
+=======
+# Group-Project-2
+Welcome to Project 2! This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm and your own server-side API. You will also continue to add to your professional repertoire with testing, continuous integration and linting tools.
+>>>>>>> master
