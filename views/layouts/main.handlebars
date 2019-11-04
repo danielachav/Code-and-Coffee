@@ -7,22 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    
     <!--Style Sheets-->
     <link rel="stylesheet" type="text/css" href="/styles/styles.css">
-    {{!-- <link rel="stylesheet" type="text/css" href="/styles/login.css"> --}}
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
     <!--Fonts Link-->
-    <link href="fonts/Aileron-Thin.otf" rel="stylesheet">
+    {{!-- <link href="fonts/Aileron-Thin.otf" rel="stylesheet"> --}}
   </head>
   <header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -32,7 +27,7 @@
       <!-- Links -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+          <a class="nav-link " data-toggle="modal" data-target="#exampleModal" id="id01" href="#">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Signup</a>
@@ -49,42 +44,23 @@
   Launch demo modal
 </button>
 
-{{!-- <!-- Modal -->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> --}}
-
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content animate">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Code & Coffee Login</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-        {{!-- <div id="id01" class="modal">
-​
-            <form class="modal-content animate" action="/action_page.php"
-                method="post">
+        <form class="modal-content animate">
                 <div class="imgcontainer">
-                    <span
-                        onclick="document.getElementById('id01').style.display='none'"
-                        class="close" title="Close Modal">&times;</span>
-                    <img src="logo2.png" alt="logo" class="avatar">
-                    <h5>Code&Coffee</h5>
+        
+                        {{!-- <a onclick="document.getElementById('id01').style.display='none'"
+                        class="close" title="Close Modal"></a> --}}
+                        
+                    <img src="/img/logo2.png" alt="logo" class="avatar">
                 </div>
 ​
                 <div class="container">
@@ -111,21 +87,15 @@
                 </div>
             </form>
         </div>
-​
-        <script>
-                // Get the modal
-                var modal = document.getElementById('id01');
-                
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-              
-       </script>
-​ --}}
-
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
 {{!-- 
 <!--SIGNUP SECTION-->
 <div id="id02" class="modal">
