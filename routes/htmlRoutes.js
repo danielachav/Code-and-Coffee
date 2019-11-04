@@ -20,6 +20,11 @@ module.exports = function(app) {
     });
   });
 
+
+  app.get("/:user", function(req, res) {
+    
+    res.render("membership");
+  });
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");

@@ -1,5 +1,134 @@
 <!--CENTER PAGE-->
-        <div class="title">
-            <h1>Code&Coffee</h1>
-            <h3>A Collaborative Coding Community</h3>
+<div class="title">
+    <h1>Code&Coffee</h1>
+    <h3>A Collaborative Coding Community</h3>
+</div>
+
+<div aria-hidden="true" aria-labelledby="login" class="modal fade" id="login" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <form class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="login">Code & Coffee Login</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" id="id01" title="Close Modal"
+                    type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/login" method="POST" class="modal-content animate">
+                    <div class="imgcontainer">
+                        <img alt="logo" class="avatar" src="/img/logo2.png">
+                    </div>
+                    ​
+                    <div class="container">
+                        <label for="uname">
+                            <b>Username</b>
+                        </label>
+                        <input name="username" placeholder="Enter Username" required type="text">
+                        ​
+                        <label for="password">
+                            <b>Password</b>
+                        </label>
+                        <input name="password" placeholder="Enter Password" required type="password">
+                        ​
+                        <button type="submit">Login</button>
+                        <label>
+                            <input checked="checked" name="remember" type="checkbox">
+                            Remember me
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </form>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal" id="id01 " type="button">Close</button>
+            <button class="btn btn-primary" id="id01" type="button">Save changes</button>
         </div>
+    </div>
+</div>
+
+<div aria-hidden="true" aria-labelledby="signUp" class="modal fade" id="signUp" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <form class="modal-content">
+
+            <div class="modal-header">
+                <h5>Join us to meet & collaborate with developers in your area!</h5>
+
+                <button aria-label="Close" class="close" data-dismiss="modal" id="id02" title="Close Modal"
+                    type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/register" method="POST" class="modal-content animate">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    ​
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="Email" required>
+                    ​
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    ​
+                    <label for="job-title"><b>Job Title</b></label>
+                    <input type="text" placeholder="title" name="job-title" required>
+
+                    <label for="Location"><b>Location</b></label>
+                    <input type="text" placeholder="City" name="location" required>
+                    ​
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </form>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{!-- <div aria-hidden="true" aria-labelledby="signUp" class="modal fade" id="signUp" role="dialog" tabindex="-1">
+    ​
+    <form class="modal-content">
+      <div class="imgcontainer">
+        <button  aria-label="close" class="close" data-dismiss="modal" id="id02"
+                   title="Close Modal" type="button">&times;</button>
+        <img src="logo2.png" alt="logo" class="avatar">
+        <h5>Join us to meet & collaborate with developers in your area!</h5>
+      </div>
+      ​
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        ​
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Email" name="Email" required>
+        ​
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        ​
+        <label for="job-title"><b>Job Title</b></label>
+        <input type="text" placeholder="title" name="job-title" required>
+
+        <label for="Location"><b>Location</b></label>
+        <input type="text" placeholder="City" name="location" required>
+        ​
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    </form>
+  </div> --}}
+
+{{!-- <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script> --}}

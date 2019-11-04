@@ -53,6 +53,11 @@ h4 {
   margin-right: 15%;
 }
 
+body {
+  height: 100%;
+  width: 100%;
+}
+
 
 @font-face {
   font-family: Aileron-Thin;
