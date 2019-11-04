@@ -5,7 +5,7 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
-        msg: "This is the message handlebars from index.handlebars!",
+        msg: "Welcome!",
         examples: dbExamples
       });
     });
