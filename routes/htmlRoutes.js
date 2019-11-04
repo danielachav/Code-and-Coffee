@@ -21,8 +21,7 @@ module.exports = function(app) {
   });
 
 
-  app.get("/:user", function(req, res) {
-    
+  app.get("/membership", function(req, res) {
     res.render("membership");
   });
   // Render 404 page for any unmatched routes
@@ -30,3 +29,4 @@ module.exports = function(app) {
     res.render("404");
   });
 };
+
