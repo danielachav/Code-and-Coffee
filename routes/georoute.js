@@ -20,21 +20,17 @@ module.exports = function (app) {
             });
     });
 
-    // Create a new example
-    app.post("/api/examples", function (req, res) {
-        db.Example.create(req.body).then(function (dbExample) {
-            res.json(dbExample);
+    app.get("/api/places", function (req, res) {
+
+        // Geocode an address.
+        googleMapsClient.places({
+            // 'south,west|north,east'
+            rectangle: '32.841175, -96.785806|32.851711, -96.794661'
+        }, function (err, response) {
+            if (!err) {
+                res.send(response.json.results);
+            }
         });
     });
 
-    // Delete an example by id
-    app.delete("/api/examples/:id", function (req, res) {
-        db.Example.destroy({
-            where: {
-                id: req.params.id
-            }
-        }).then(function (dbExample) {
-            res.json(dbExample);
-        });
-    });
 };
