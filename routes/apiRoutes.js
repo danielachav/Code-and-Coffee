@@ -7,8 +7,8 @@ const googleMapsClient = require('@google/maps').createClient({
 module.exports = function (app) {
   app.post("/api/locate", function (req, res) {
     var queryString;
-    queryString += req.body.address +", ";
-    queryString += req.body.city +", ";
+    queryString += req.body.address + ", ";
+    queryString += req.body.city + ", ";
     queryString += req.body.state;
 
     googleMapsClient.geocode({
@@ -16,12 +16,28 @@ module.exports = function (app) {
       })
       .asPromise()
       .then((response) => {
-        res.send(response.json.results);
+        googleMapsClient.placesNearby({
+            language: 'en',
+            location: [parseFloat(response.json.results[0].geometry.location.lat), parseFloat(response.json.results[0].geometry.location.lng)],
+            rankby: 'distance',
+            minprice: 1,
+            maxprice: 2,
+            opennow: true,
+            type: 'cafe'
+          })
+          .asPromise()
+          .then(function (response) {
+            res.send(response.json.results)
+          })
+          .catch((err) => {
+            res.send(err);
+          });
       })
       .catch((err) => {
         res.send(err);
       });
   });
+
   // Get all examples
   app.get("/api/examples", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
