@@ -1,3 +1,5 @@
+/*HOMEPAGE CSS*/
+
 .list-group-item {
   line-height: 2.5;
 }
@@ -162,63 +164,155 @@ span.psw {
   to {transform: scale(1)}
 }
 
-/* Messages CSS */
-#mainPageBG {
-  background-image: url(./coffeesinglecup.jpg);
+/* END OF HOMEPAGE CSS */
+
+/* START OF COMMUNITY DASHBOARD CSS */
+
+#community-background {
+  background-image: url(./meeting.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
 }
 
-.msgContainer {
-  max-width: 800px;
+#member-nav {
+  background-color: rgba(139, 139, 139, 0.5);
+}
+
+#profile-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 62%;
+}
+
+
+#entire-page {
+  backdrop-filter: blur(5px);
+}
+
+
+.header-container {
+  justify-content: space-evenly;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+
+h1 {
+  font-family: 'Aileron-Thin';
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+h2 {
+  font-family: 'Aileron-Thin';
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  margin-left: 10px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-family: 'Aileron-Thin';
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: flex-start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  height: 200px;
+  width: 250px;
+}
+
+/* Float four columns side by side */
+
+#community-row {
+  margin-left: 10px;
+  margin-bottom: 8%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+ 
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .card-projects {
+  margin-bottom: 2%;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.795);
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 300px;
+  text-align: center;
+  background-color: rgba(10, 10, 10, 0.815);
+  
+  }
+}
+
+
+.fa {font-size:50px;}
+
+
+.community-industries {
   height: 300px;
-  border: 2px solid #dedede;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  margin: 0 auto;
 }
 
-.darker {
-  border-color: #ccc;
-  background-color: #ddd;
+.fas {
+  width: 50px;
+  height: 30px;
 }
 
-.msgContainer::after {
-  content: "";
-  clear: both;
-  display: table;
+#community-icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+  margin-top: 8%;
+  margin-bottom: 0;
 }
 
-.msgContainer img {
-  float: left;
-  max-width: 60px;
-  width: 100%;
-  margin-right: 20px;
-  border-radius: 50%;
+#community-list {
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+justify-content: space-evenly;
 }
 
-.msgContainer img.right {
-  float: right;
-  margin-left: 20px;
-  margin-right:0;
+li {
+color: white;
 }
 
-.time-right {
-  float: right;
-  color: #aaa;
+.content-map {
+height: 600px;
 }
 
-.time-left {
-  float: left;
-  color: #999;
+iframe {
+margin-left: 20%;
+margin-top: 3%;
 }
 
+/* END OF COMMUNITY DASHBOARD CSS */
 
-/* Membership CSS */
+/* START OF MEMBERSHIP CSS */
 #membershipBG {
   background-image: url(./coffelaptop.jpg);
   background-size: cover; 
@@ -590,18 +684,69 @@ h1 {
     opacity: 0.7;
   }
 
+/* END OF MEMBERSHIP CSS */
+
+/* CHAT MESSAGES CSS*/
+#mainPageBG {
+  background-image: url(./coffeesinglecup.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.msgContainer {
+  max-width: 800px;
+  height: 300px;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  margin: 0 auto;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.msgContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.msgContainer img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.msgContainer img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+/* END OF CHAT MESSAGES */
+
+/* START OF USER PROFILE PAGE CSS */
 
 
 
-
-
-
-
-
-
-
-
-
+/* END OF USER PROFILE PAGE CSS */
 
 
 /* Change styles for span and cancel button on extra small screens */
@@ -615,3 +760,35 @@ h1 {
   } */
 }
 
+@media screen and (max-width: 820px) {
+  .search-label {
+    border-radius: 0;
+  }
+  .cat-wrap {
+    width: 50%;
+  }
+  .submit-wrap {
+    width: 50%;
+    display: block;
+    margin: 1rem auto 1rem;
+  }
+  .btn {
+    border-radius: 5px;
+  }
+  .search-form {
+    padding: 0 1rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .cat-wrap,
+  .search-wrap {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .grid-80 {
+    width: 75%;
+  }
+  .grid-20 {
+    width: 25%;
+  }
+}
