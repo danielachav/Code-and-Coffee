@@ -99,11 +99,12 @@ b {
   width: auto;
   padding: 10px 18px;
   background-color: #dad6d6;
-} */
+} 
 .container {
   padding: 16px;
   background-color: rgba(160, 160, 160, 0.9);
 }
+*/
 
 span.psw {
   float: right;
@@ -326,13 +327,13 @@ iframe {
 /* END OF COMMUNITY DASHBOARD CSS */
 
 /* START OF MEMBERSHIP CSS */
-#membershipBG {
-  background-image: url(./coffelaptop.jpg);
+#membersBG {
+  background-image: url("/img/coffelaptop.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
+} 
 
 #member-nav {
   background-color: rgba(139, 139, 139, 0.5);
@@ -350,11 +351,11 @@ iframe {
 }
 
 .search-form {
-  position: relative;
-  margin-top: 55px;
-  top: 20%;
+  /* position: relative; */
+  margin-top: 5px;
+  /* top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   width: 100%;
 }
 
@@ -695,17 +696,37 @@ h1 {
 /* END OF MEMBERSHIP CSS */
 
 /* CHAT MESSAGES CSS*/
-#mainPageBG {
-  background-image: url(./coffeesinglecup.jpg);
+#messagesBG {
+  background-image: url(/img/coffeesinglecup.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.msgContainer {
+.side-container a:hover {
+  border-bottom: 1px solid #ac8884;
+}
+
+.side-container {
+height: 1100px;
+width: 300px;
+margin-left: 3%;
+background-color: #f1f1f1;
+border: 2px solid #dedede;
+border-radius: 5px;
+float: left;
+}
+
+#sidepic {
+  width: 50px;
+  height: 50px;
+}
+
+
+.container {
   max-width: 800px;
-  height: 300px;
+  height: 250px;
   border: 2px solid #dedede;
   background-color: #f1f1f1;
   border-radius: 5px;
@@ -717,40 +738,130 @@ h1 {
 .darker {
   border-color: #ccc;
   background-color: #ddd;
+  height: 200px;
 }
 
-.msgContainer::after {
+
+.darker-two {
+  border-color: #ccc;
+  background-color: #ddd;
+  height: 200px;
+}
+
+
+.container::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.msgContainer img {
+
+#msg-img {
   float: left;
   max-width: 60px;
-  width: 100%;
+  width: 50px;
+  height: 50px;
   margin-right: 20px;
   border-radius: 50%;
 }
 
-.msgContainer img.right {
+
+#msg-img.right {
   float: right;
   margin-left: 20px;
-  margin-right: 0;
+  margin-right:0;
 }
+
 
 .time-right {
   float: right;
   color: #aaa;
 }
 
+
 .time-left {
   float: left;
   color: #999;
 }
+
+
+h2 {
+  font-family: 'Aileron-Thin';
+  color: black;
+  margin-top: 2%;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+
+.container-text {
+  height: 200px;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  width: 688px;
+  margin-left: 27%;
+  border-radius: 5px;
+}
 /* END OF CHAT MESSAGES */
 
 /* START OF USER PROFILE PAGE CSS */
+
+#userprofileBG {
+  background-image: url(/img/coffeebackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user-profile {
+  background-color: rgba(238, 238, 238, 0.774);
+  margin-top: 5%;
+  width: 1100px;
+  height: 700px;
+  margin-left: 7%;
+}
+
+.side-profile {
+  background-color: rgba(238, 238, 238, 0.774);
+  margin-top: 5%;
+  width: 300px;
+  height: 700px;
+  margin-left: 7%;
+  float: left;
+}
+
+#profilepic {
+  width: 200px;
+  height: 180px;
+  margin-top: 18%;
+  margin-left: 18%;
+  margin-bottom: 5%;
+}
+
+h4 {
+  font-family: 'Aileron-Thin';
+  margin-top: 3%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+p {
+  font-family: 'Aileron-Thin';
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+a {
+  text-decoration: none;
+  align-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
 
 /* END OF USER PROFILE PAGE CSS */
 

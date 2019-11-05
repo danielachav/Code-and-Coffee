@@ -1,32 +1,99 @@
-​<link href="/styles/message.css" rel="stylesheet" type="text/css">
+  <div id="messagesBG">
+  <nav class="navbar navbar-expand-sm navbar-dark" id="member-nav">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="/community"></a>
+            <img src="/img/logo2.png" alt="logo" style="width:70px; height:55px;">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/community">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/members">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/messages">Messages</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" id="profile-icon" href="/userprofile">
+            <img src="/img/headPic.png" alt="logo" style="width:70px; height:55px;"></a>
+        </nav>
 
-<h2>Chat Messages</h2>
-        <div class="container">
-            <img src="/w3images/bandmember.jpg" alt="Avatar"
-                style="width:100%;">
-            <p>Hello. How are you today?</p>
-            <span class="time-right">11:00</span>
+<!--MESSAGES SIDE SECTION-->
+        <h2 id=messages-header>Send a message to collaborate!</h2>
+
+        <div class="side-container">
+        <a class="hover">
+        <img src="/img/katherine.jpg" alt="Avatar" class="left" style="border-radius: 50%" id="sidepic">
+        <div id="message-one">
+            <h4>Katherine Ray</h4>
+            <p>Wow that sounds like...</p>  
         </div>
-​
-        <div class="container darker">
-            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"
-                style="width:100%;">
-            <p>Hey! I'm fine. Thanks for asking!</p>
-            <span class="time-left">11:01</span>
+        <hr>
+        <img src="/img/clonie.jpg" alt="Avatar" class="left" style="border-radius: 50%" id="sidepic">
+        <div id="message-two">
+            <h4>Clonie Villani</h4>
+            <p>Hey Daniela!</p>
         </div>
-​
-        <div class="container">
-            <img src="/w3images/bandmember.jpg" alt="Avatar"
-                style="width:100%;">
-            <p>Sweet! So, what do you wanna do today?</p>
-            <span class="time-right">11:02</span>
+        <hr>
+        <img src="/img/namndi.jpg" alt="Avatar" class="left" style="border-radius: 50%" id="sidepic">
+        <div id="message-three">
+            <h4>Nnamndi Iroham</h4>
+            <p>Hey Daniela!</p>
+            <span class="time-left">3 days ago</span> 
+        </a>
         </div>
-​
-        <div class="container darker">
-            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right"
-                style="width:100%;">
-            <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
-            <span class="time-left">11:05</span>
+        <hr>
+
+
+
+
+
+<!--MESSAGES MAIN SECTION-->
+
         </div>
 
+        <div class="container">
+            <img src="/img/daniela.jpg" id="msg-img" alt="Avatar"
+                style="width:100%;">
+            <span class="time-right">November 4th, 2019, 11:00pm</span>
+            <p>Hi Katherine! I came across your profile and saw that you are experienced in back-end development and know Javascript! 
+                I am currently working on a project and need someone with knowledge in this area to help me out. 
+            I'd love to collaborate with you if you're interested!</p>
+            
+        </div>
+
+        <div class="container darker">
+            <img src="/img/katherine.jpg" id="msg-img" alt="Avatar" class="right"
+                style="width:100%;">
+             <span class="time-left">November 5th, 2019, 8:20am</span>
+            <p>Hey Daniela! Thank you so much for reaching out! I would definitely like to hear more about this project and see if I can offer you my expertise!</p>
+        </div>
+
+        <div class="container">
+            <img src="/img/daniela.jpg" id="msg-img" alt="Avatar"
+                style="width:100%;">
+                <span class="time-right">November 5th, 2019, 12:30pm</span>
+            <p>Awesome! Thank you so much for responding. The project is a full stack webb application called Code and Coffee. 
+                It is basically an online platform strictly for coders and developers to connect and collaborate with others in their area! I'm currently having trouble with my database.
+            </p>
+        </div>
+
+        <div class="container darker-two">
+            <img src="/img/katherine.jpg" id="msg-img" alt="Avatar" class="right"
+                style="width:100%;">
+                <span class="time-left">November 5th, 2019, 6:48pm</span>
+            <p>Wow that sounds like an amazing project! Luckily, I know everything about creating databases and would definitely like to contribute! 
+                I am available to meet anytime this week after 3pm. We can go over all the details then. I live close to NorthPark Mall. Cant wait to work together!
+            </p>
+        </div>
+
+        <div class="container-text">
+            <textarea id="subject" placeholder="Start typing...">
+
+            </textarea>
+        <input type="submit" value="submit">
+        </div>
+
+</div>
   
