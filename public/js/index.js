@@ -101,3 +101,19 @@ data = {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+// from members.handlebars file
+$(document).ready(function(){
+  $("#search").click(function(){
+      event.preventDefault();
+      setTimeout(function(){
+          $(".loader").toggle();
+
+      }, 3000);
+      $(".loader").toggle();
+      // $.ajax({
+      //     url: ;
+      //     method: "GET"
+      // }).then()
+});
+});
