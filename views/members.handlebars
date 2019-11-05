@@ -1,34 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Code&Coffee</title>
-
-    <!--Required Meta tags-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!--Javascript -->
-    <script type="text/javascript" src="members.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script language="php"></script>
-
-    <!--Style Sheets-->
-    <link rel="stylesheet" type="text/css" href="mainpage.css">
-    <link rel="stylesheet" type="text/css" href="members.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Fonts Link-->
-    <link href="/aileron-cufonfonts/Aileron-Thin.otf" rel="stylesheet">
-</head>
-
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark" id="member-nav">
         <!-- Brand/logo -->
@@ -86,23 +55,6 @@
 
     <div class="loader"></div>
 
-    <script>
-        $(document).ready(function () {
-            $("#search").click(function () {
-                event.preventDefault();
-                setTimeout(function () {
-                    $(".loader").toggle();
-
-                }, 3000);
-                $(".loader").toggle();
-                // $.ajax({
-                //     url: ;
-                //     method: "GET"
-                // }).then()
-            });
-        });
-
-    </script>
 
 
     <!-- The userprofiles -->
@@ -143,7 +95,7 @@
 
     <div class="row">
         <div class="card">
-            <img src="katherine.jpg" alt="John">
+            <img src="/img/katherine.jpg" alt="John">
             <h1>Katherine Ray</h1>
             <p class="jobtitle">Front End Developer</p>
             <p>PHP, Javascript, Ruby, MySQL</p>
@@ -156,10 +108,10 @@
             </div>
             <p><button>Collaborate</button></p>
         </div>
-
+        {{#each users}}
         <div class="card">
-            <img src="daniela.jpg" alt="John">
-            <h1>Daniela Chavez</h1>
+            <img src={{user.img}} alt="John">
+            <h1>{{users.firstName}}{{users.lastName}}</h1>
             <p class="jobtitle">Front End Developer</p>
             <p>PHP, Javascript, Ruby, MySQL</p>
             <p>Harvard University</p>
@@ -171,26 +123,6 @@
             </div>
             <p><button>Collaborate</button></p>
         </div>
+        {{/each}}
 
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $("#search").click(function () {
-                event.preventDefault();
-                setTimeout(function () {
-                    $(".card").toggle();
-
-                }, 4000);
-                $(".card").toggle();
-                // $.ajax({
-                //     url: ;
-                //     method: "GET"
-                // }).then()
-            });
-        });
-
-
-    </script>
-
-</html>

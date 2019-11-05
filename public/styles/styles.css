@@ -162,6 +162,448 @@ span.psw {
   to {transform: scale(1)}
 }
 
+/* Messages CSS */
+#mainPageBG {
+  background-image: url(./coffeesinglecup.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.msgContainer {
+  max-width: 800px;
+  height: 300px;
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  margin: 0 auto;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.msgContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.msgContainer img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.msgContainer img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+
+/* Membership CSS */
+#membershipBG {
+  background-image: url(./coffelaptop.jpg);
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#member-nav {
+    background-color: rgba(139, 139, 139, 0.5);
+  }
+
+
+#profile-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 60%;
+}
+
+/*SEARCH SECTION */
+::selection {
+    color: #fff;
+  }
+  
+  .search-form {
+    position: relative;
+    margin-top: 55px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  
+  #membershipForm {
+    /* font size 0 to remove inline-block whitespcae*/
+    font-size: 0;
+    max-width: 50rem;
+    margin: auto;
+  }
+  
+  .inp-wrap {
+    display: inline-block;
+  }
+  
+  
+  /* very messy "grid" styles */
+  
+  [class*="grid-"] {
+    vertical-align: top;
+    height: 3.125rem;
+    font-size: 1.2rem;
+  }
+  
+  .search-wrap {
+    width: 50%;
+  }
+  
+  .cat-wrap {
+    width: 35%;
+  }
+  
+  .submit-wrap {
+    width: 15%;
+  }
+  
+  .grid-20 {
+    width: 20%;
+  }
+  
+  .grid-25 {
+    width: 25%;
+  }
+  
+  .grid-75 {
+    width: 75%;
+  }
+  
+  .grid-80 {
+    width: 80%;
+  }
+  
+  .grid-100 {
+    width: 100%;
+  }
+  
+  
+  /* input and label styles*/
+  
+  label {
+    padding: 0 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 3.125rem;
+    background: #2F2F2F;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    transition: color 0.2s ease-in-out, 0.2s ease-in-out;
+  }
+  
+  label:hover {
+    background: #E1E1E1;
+  }
+  
+  .search-label {
+    width: 25%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  input,
+  select {
+    transition: box-shadow 0.2s ease-in-out;
+    border: 0;
+    padding: 0 0 0 0.5em;
+    background-color: rgba(255, 255, 255, 0.466);
+  }
+  
+  #search-field:focus,
+  select:focus {
+    outline: none;
+    border: 0;
+    box-shadow: inset 0 0 0 5px rgb(94, 94, 94);
+  }
+  
+  
+  /* select menu styles */
+  
+  .cat-wrap {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  /* triangle */
+  
+  .cat-wrap::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5em;
+    color: #0a0a0a;
+    font-size: 1.2rem;
+    pointer-events: none;
+  }
+  
+  select {
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+  
+  option {
+    margin: 0.6em 0;
+  }
+  
+  
+  /* search button and icon styles */
+  
+  
+  /* remove mozilla button styles */
+  
+  button::-moz-focus-inner {
+    padding: 0 !important;
+    border: 0 none !important;
+  }
+  
+  .btn {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border: 0;
+    padding: 0 0.3em 0 0;
+    background: rgba(0, 0, 0, 0.747);
+    color: white;
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .btn:hover,
+  .btn:focus,
+  .btn:active {
+    outline: 0;
+    background: rgb(17, 17, 17);
+    color: #333333;
+  }
+  
+  .btn:active {
+    transform: translateY(1px);
+  }
+  
+  .search-icon-container {
+    outline: 0;
+  }
+  
+  #search-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+    outline: 0;
+    fill: #fff;
+  }
+  
+  .btn:hover #search-icon,
+  .btn:focus #search-icon {
+    fill: #533f3f;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .search-label {
+      border-radius: 0;
+    }
+    .cat-wrap {
+      width: 50%;
+    }
+    .submit-wrap {
+      width: 50%;
+      display: block;
+      margin: 1rem auto 1rem;
+    }
+    .btn {
+      border-radius: 5px;
+    }
+    .search-form {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    .cat-wrap,
+    .search-wrap {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    .grid-80 {
+      width: 75%;
+    }
+    .grid-20 {
+      width: 25%;
+    }
+  }
+
+/* LOADER */
+  .loader {
+    display: none;
+    position: relative;
+    margin-left: 580px;
+    margin-top: 20px;
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #161616e5; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+/* USER CARDS PROFILE SECTION */
+
+.row {
+     display: flex;
+     flex-direction: row;
+}
+
+.card {
+    display: flex;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 500px;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    max-height: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Aileron-Thin';
+    margin-top: 130px;
+  }
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Aileron-Thin';
+    font-weight: bolder;
+    font-size: 25px;
+}
+  
+  .jobtitle {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
