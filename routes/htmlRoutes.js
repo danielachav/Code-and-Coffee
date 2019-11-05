@@ -24,6 +24,17 @@ module.exports = function(app) {
   app.get("/membership", function(req, res) {
     res.render("membership");
   });
+  app.get("/community", function(req, res) {
+    res.render("community");
+  });
+  app.get("/members", function(req, res) {
+    db.User.findAll({}).then(function(data){
+      res.render("members", {users: data});
+    })
+  });
+  app.get("/messages", function(req, res) {
+    res.render("messages");
+  });
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
