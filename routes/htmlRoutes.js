@@ -20,8 +20,13 @@ module.exports = function(app) {
     });
   });
 
+
+  app.get("/membership", function(req, res) {
+    res.render("membership");
+  });
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
     res.render("404");
   });
 };
+

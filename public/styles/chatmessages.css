@@ -1,0 +1,124 @@
+body {
+    background-image: url(./coffeesinglecup.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin-bottom: 5%;
+  }
+
+.header-container {
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+#member-nav {
+    background-color: rgba(139, 139, 139, 0.5);
+  }
+
+#profile-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 60%;
+}
+
+a:hover { color: #ac8884; }
+
+.side-container a:hover {
+    border-bottom: 1px solid #ac8884;
+  }
+
+.side-container {
+ height: 1100px;
+ width: 300px;
+ margin-left: 3%;
+ background-color: #f1f1f1;
+ border: 2px solid #dedede;
+ border-radius: 5px;
+ float: left;
+}
+
+#sidepic {
+    width: 50px;
+    height: 50px;
+}
+
+  
+.container {
+    max-width: 800px;
+    height: 250px;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin: 0 auto;
+  }
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+    height: 200px;
+}
+
+
+.darker-two {
+    border-color: #ccc;
+    background-color: #ddd;
+    height: 200px;
+  }
+  
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+
+.time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+
+.time-left {
+    float: left;
+    color: #999;
+  }
+
+
+h2 {
+    font-family: 'Aileron-Thin';
+    color: black;
+    margin-top: 2%;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.container-text {
+    height: 200px;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    width: 688px;
+    margin-left: 27%;
+    border-radius: 5px;
+}
