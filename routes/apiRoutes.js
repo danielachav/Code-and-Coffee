@@ -16,42 +16,27 @@ module.exports = function (app) {
       })
       .asPromise()
       .then((response) => {
-        res.send(response.json.results);
+        googleMapsClient.placesNearby({
+            language: 'en',
+            location: [parseFloat(response.json.results[0].geometry.location.lat), parseFloat(response.json.results[0].geometry.location.lng)],
+            rankby: 'distance',
+            minprice: 1,
+            maxprice: 2,
+            opennow: true,
+            type: 'cafe'
+          })
+          .asPromise()
+          .then(function (response) {
+            res.send(response.json.results)
+          })
+          .catch((err) => {
+            res.send(err);
+          });
       })
       .catch((err) => {
         res.send(err);
       });
   });
-
-  app.get("/api/places", function (req, res) {
-
-    // Geocode an address.
-    googleMapsClient.placesNearby({
-        language: 'en',
-        location: [32.841175, -96.785806],
-        rankby: 'distance',
-        minprice: 1,
-        maxprice: 2,
-        opennow: true,
-        type: 'cafe'
-      })
-      .asPromise()
-      .then(function (response) {
-        res.send(response.json.results)
-      })
-  });
-
-
-  // Geocode an address.
-  // googleMapsClient.places({
-  //     // 'south,west|north,east'
-  //     locationbias: "rectangular",
-  //     rectanglee: '32.841175, -96.785806|32.851711, -96.794661'
-  // }, function (err, response) {
-  //     if (!err) {
-  //         res.send(response.json.results);
-  //     }
-  // });
 
   // Get all examples
   app.get("/api/examples", function (req, res) {
