@@ -1,118 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Code&Coffee</title>
 
-        <!--Required Meta tags-->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <title>Code&Coffee</title>
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
+    <!--Required Meta tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <!--Javascript -->
-        <script type="text/javascript" src="members.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script language="php"></script>
+    <!--Javascript -->
+    <script type="text/javascript" src="members.js"></script>
 
-        <!--Style Sheets-->
-        <link rel="stylesheet" type="text/css" href="mainpage.css">
-        <link rel="stylesheet" type="text/css" href="members.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--Fonts Link-->
-        <link href="/aileron-cufonfonts/Aileron-Thin.otf" rel="stylesheet">
-    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script language="php"></script>
 
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark" id="member-nav">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#"></a>
-            <img src="logo2.png" alt="logo" style="width:70px; height:55px;">
-            <!-- Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="community.html">Community</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="members.html">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="messages.html">Messages</a>
-                </li>
-            </ul>
-            <a class="navbar-brand" id="profile-icon" href="userprofile.html"></a>
-            <img src="headPic.png" alt="logo" style="width:70px; height:55px;">
-        </nav>
+    <!--Style Sheets-->
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <link rel="stylesheet" type="text/css" href="members.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fonts Link-->
+    <link href="/aileron-cufonfonts/Aileron-Thin.otf" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="member-nav">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#"></a>
+        <img src="logo2.png" alt="logo" style="width:70px; height:55px;">
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="community.html">Community</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="members.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="messages.html">Messages</a>
+            </li>
+        </ul>
+        <a class="navbar-brand" id="profile-icon" href="userprofile.html"></a>
+        <img src="headPic.png" alt="logo" style="width:70px; height:55px;">
+    </nav>
 
 
-        <!-- The search-->
+    <!-- The search-->
 
-        <section class="search-form">
-                <form action="" method="GET" name="search" role="search">
-                  <p class="inp-wrap search-wrap">
-                    <label for="search-field" class="search-label grid-25">Find</label>
-                    <input type="search" name="search-term" id="search-field" class="grid-75" placeholder="Industry..." /></p>
-                  <p class="inp-wrap cat-wrap">
-                    <label for="categories" class="grid-20">in</label>
-                    <select name="search categories" id="categories" class="grid-80" placeholder="Location...">
-                      <option value="FrontEnd" selected>City</option>
-                      <option value="html/css">Los Angeles</option>
-                      <option value="javascript">Chicago</option>
-                      <option value="datascience">Dallas</option>
-                      <option value="fullstack">San Francisco</option>
-                      <option value="backend">New York</option>
-                      <option value="webdesign">Miami</option>
-                    </select>
-                  </p>
-                  <p class="inp-wrap submit-wrap">
-                    <button class="grid-100 btn" id="search">
-                      <span class="search-icon-container"><?xml version="1.0" encoding="utf-8"?>
-                      </span>
-                      Search
-                    </button>
-                  </p>
-                </form>
-              </section> 
+    <section class="search-form">
+        <form action="" method="GET" name="search" role="search">
+            <p class="inp-wrap search-wrap">
+                <label for="search-field" class="search-label grid-25">Find</label>
+                <input type="search" name="search-term" id="search-field" class="grid-75" placeholder="Industry..." />
+            </p>
+            <p class="inp-wrap cat-wrap">
+                <label for="categories" class="grid-20">in</label>
+                <select name="search categories" id="categories" class="grid-80" placeholder="Location...">
+                    <option value="FrontEnd" selected>City</option>
+                    <option value="html/css">Los Angeles</option>
+                    <option value="javascript">Chicago</option>
+                    <option value="datascience">Dallas</option>
+                    <option value="fullstack">San Francisco</option>
+                    <option value="backend">New York</option>
+                    <option value="webdesign">Miami</option>
+                </select>
+            </p>
+            <p class="inp-wrap submit-wrap">
+                <button class="grid-100 btn" id="search">
+                    <span class="search-icon-container">
+                        <?xml version="1.0" encoding="utf-8"?>
+                    </span>
+                    Search
+                </button>
+            </p>
+        </form>
+    </section>
 
-        <!--THE LOADING-->
+    <!--THE LOADING-->
 
-              <div class="loader"></div>
+    <div class="loader"></div>
 
-              <script>
-                  $(document).ready(function(){
-                    $("#search").click(function(){
-                        event.preventDefault();
-                        setTimeout(function(){
-                            $(".loader").toggle();
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                event.preventDefault();
+                setTimeout(function () {
+                    $(".loader").toggle();
 
-                        }, 3000);
-                        $(".loader").toggle();
-                        // $.ajax({
-                        //     url: ;
-                        //     method: "GET"
-                        // }).then()
-                 });
+                }, 3000);
+                $(".loader").toggle();
+                // $.ajax({
+                //     url: ;
+                //     method: "GET"
+                // }).then()
             });
-                
-              </script>
+        });
+
+    </script>
 
 
-        <!-- The userprofiles -->
-<div class="row">
+    <!-- The userprofiles -->
+    <div class="row">
+
+        {{#each members}}
         <div class="card">
             <img src="namndi.jpg" alt="John">
-            <h1>Nnamdi Iroham</h1>
+            <h1>{{members.firstName}} {{members.lastNQME}}</h1>
             <p class="jobtitle">Front End Developer</p>
             <p>Javascript, MySQL</p>
             <p>Harvard University</p>
@@ -124,73 +123,74 @@
             </div>
             <p><button>Collaborate</button></p>
         </div>
+        {{/each}}
         <div class="card">
-                <img src="clonie.jpg" alt="John">
-                <h1>Clonie Villani</h1>
-                <p class="jobtitle">Front End Developer</p>
-                <p>PHP, Javascript, Ruby, MySQL</p>
-                <p>Harvard University</p>
-                <p>Dallas, TX</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </div>
-                <p><button>Collaborate</button></p>
+            <img src="clonie.jpg" alt="John">
+            <h1>Clonie Villani</h1>
+            <p class="jobtitle">Front End Developer</p>
+            <p>PHP, Javascript, Ruby, MySQL</p>
+            <p>Harvard University</p>
+            <p>Dallas, TX</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
             </div>
+            <p><button>Collaborate</button></p>
+        </div>
     </div>
 
 
     <div class="row">
-            <div class="card">
-                    <img src="katherine.jpg" alt="John">
-                    <h1>Katherine Ray</h1>
-                    <p class="jobtitle">Front End Developer</p>
-                    <p>PHP, Javascript, Ruby, MySQL</p>
-                    <p>Harvard University</p>
-                    <p>Dallas, TX</p>
-                    <div style="margin: 24px 0;">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                    </div>
-                    <p><button>Collaborate</button></p>
-                </div>
-
-                <div class="card">
-                        <img src="daniela.jpg" alt="John">
-                        <h1>Daniela Chavez</h1>
-                        <p class="jobtitle">Front End Developer</p>
-                        <p>PHP, Javascript, Ruby, MySQL</p>
-                        <p>Harvard University</p>
-                        <p>Dallas, TX</p>
-                        <div style="margin: 24px 0;">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                        </div>
-                        <p><button>Collaborate</button></p>
-                    </div>
-
+        <div class="card">
+            <img src="katherine.jpg" alt="John">
+            <h1>Katherine Ray</h1>
+            <p class="jobtitle">Front End Developer</p>
+            <p>PHP, Javascript, Ruby, MySQL</p>
+            <p>Harvard University</p>
+            <p>Dallas, TX</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Collaborate</button></p>
         </div>
 
-        <script>
-         $(document).ready(function(){
-                    $("#search").click(function(){
-                        event.preventDefault();
-                        setTimeout(function(){
-                            $(".card").toggle();
+        <div class="card">
+            <img src="daniela.jpg" alt="John">
+            <h1>Daniela Chavez</h1>
+            <p class="jobtitle">Front End Developer</p>
+            <p>PHP, Javascript, Ruby, MySQL</p>
+            <p>Harvard University</p>
+            <p>Dallas, TX</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Collaborate</button></p>
+        </div>
 
-                        }, 4000);
-                        $(".card").toggle();
-                        // $.ajax({
-                        //     url: ;
-                        //     method: "GET"
-                        // }).then()
-                 });
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#search").click(function () {
+                event.preventDefault();
+                setTimeout(function () {
+                    $(".card").toggle();
+
+                }, 4000);
+                $(".card").toggle();
+                // $.ajax({
+                //     url: ;
+                //     method: "GET"
+                // }).then()
             });
-        
-        
-        </script>
+        });
 
-    </html>
+
+    </script>
+
+</html>
