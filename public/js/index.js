@@ -96,7 +96,7 @@ var handleDeleteBtnClick = function() {
 
 data = {
   img_src: base64img.base64Sync('/img/backgroundCoffee.jpg')
-}
+} 
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
