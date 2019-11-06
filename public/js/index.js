@@ -117,3 +117,26 @@ $(document).ready(function(){
       // }).then()
 });
 });
+
+$(document).ready(function () {
+  //selecting from the inputs
+  $(".submit").on("click",function (req,res) {
+var address = {
+address: $("#userAddress").val().trim();          
+city: $("#userCity").val().trim();    
+state: $("#userState").val().trim();
+}
+
+      $.ajax({
+          url: "/api/locate",
+          data: address,
+method: "POST",
+          contentType: "application/json",
+          dataType: 'json',
+          success: function (result) {
+              console.log(result);
+//append data to divs to show choices then store location ids
+          }
+      })
+  });
+});
