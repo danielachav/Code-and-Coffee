@@ -28,25 +28,28 @@ img {
   width: 300px;
   height: 320px;
 }
-h1 {
+
+#maintitle {
   color: white;
   background-color: rgba(160, 160, 160, 0.5);
-  font-family: "Aileron-Thin";
+  font-family: 'Aileron-Thin';
   font-size: 90px;
   margin-bottom: 0;
   margin-left: 15%;
   margin-right: 15%;
 }
-h3 {
-  color: rgb(0, 0, 0);
+
+#maintitle2 {
+  color: black;
   background-color: rgba(160, 160, 160, 0.5);
-  font-family: "Aileron-Thin";
-  letter-spacing: 0.3cm;
+  font-family: 'Aileron-Thin';
+  letter-spacing: .3cm;
   font-size: 25px;
   margin-bottom: 0;
   margin-left: 15%;
   margin-right: 15%;
-}
+} 
+
 h4 {
   color: rgb(0, 0, 0);
   background-color: rgba(160, 160, 160, 0.5);
@@ -54,7 +57,7 @@ h4 {
   font-size: 20px;
   margin-left: 15%;
   margin-right: 15%;
-}
+} */
 
 body {
   height: 100%;
