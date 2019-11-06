@@ -874,7 +874,23 @@ h4 {
 
 #school {
   font-family: 'Aileron-Thin';
-  text-align: left;
+  text-align: center;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+#work {
+  font-family: 'Aileron-Thin';
+  text-align: center;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#skills {
+  font-family: 'Aileron-Thin';
+  text-align: center;
   font-size: 20px;
   margin-left: 5%;
   margin-top: 2%;
