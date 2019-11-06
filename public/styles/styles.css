@@ -8,9 +8,11 @@
   justify-content: space-evenly;
   max-width: 100%;
 }
+
 .bg-dark {
   background-color: rgba(139, 139, 139, 0.5);
 }
+
 .title {
   background-image: url("/img/backgroundCoffee.jpg");
   background-attachment: fixed;
@@ -79,6 +81,7 @@ input[type="password"] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 button:hover {
   opacity: 0.8;
 }
@@ -94,6 +97,7 @@ img.avatar {
   height: 150px;
   border-radius: 50%;
 }
+
 b {
   color: white;
 }
@@ -104,6 +108,7 @@ b {
   padding: 10px 18px;
   background-color: #dad6d6;
 } 
+
 .container {
   padding: 16px;
   background-color: rgba(160, 160, 160, 0.9);
@@ -114,6 +119,7 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
+
 /* The Modal (background) */
 .modal {
   display: none;
@@ -239,7 +245,7 @@ span.psw {
 #profile-icon {
   display: flex;
   justify-content: flex-end;
-  margin-left: 62%;
+  margin-left: 120%;
   width: 60px;
   height: 45px;
 }
@@ -660,7 +666,7 @@ button::-moz-focus-inner {
    flex-direction: row;
 }
 
-.users-card {
+.card {
   display: flex;
   background-color: white;
 }
@@ -705,7 +711,7 @@ form.example::after {
   display: table;
 }
 
-.users-card {
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   max-width: 300px;
@@ -777,7 +783,7 @@ button {
 
 a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 5px;
   font-weight: bold;
   color: black;
 }
@@ -802,6 +808,7 @@ button:hover, a:hover {
   border-bottom: 1px solid #ac8884;
 }
 
+
 .side-container {
 height: 1100px;
 width: 300px;
@@ -821,6 +828,7 @@ float: left;
 .container {
   max-width: 800px;
   height: 250px;
+  text-wrap: wrap;
   border: 2px solid #dedede;
   background-color: #f1f1f1;
   border-radius: 5px;
@@ -831,6 +839,7 @@ float: left;
 
 .darker {
   border-color: #ccc;
+  text-wrap: wrap;
   background-color: #ddd;
   height: 200px;
 }
@@ -889,6 +898,25 @@ h2 {
   justify-content: center;
 }
 
+#person-name {
+    font-family: 'Aileron-Thin';
+    background: none;
+    color: black;
+    margin-top: 2%;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#msgpreview {
+    font-family: 'Aileron-Thin';
+    background: none;
+    color: black;
+    margin-top: 2%;
+    font-size: 20px;
+    text-align: left;
+}
+
 .container-text {
   height: 200px;
   border: 2px solid #dedede;
@@ -913,7 +941,7 @@ h2 {
   background-color: rgba(238, 238, 238, 0.774);
   margin-top: 5%;
   width: 1100px;
-  height: 700px;
+  height: 550px;
   margin-left: 7%;
 }
 
@@ -921,7 +949,7 @@ h2 {
   background-color: rgba(238, 238, 238, 0.774);
   margin-top: 5%;
   width: 300px;
-  height: 700px;
+  height: 550px;
   margin-left: 7%;
   float: left;
 }
@@ -944,7 +972,8 @@ h4 {
 
 #education-title {
   font-family: 'Aileron-Thin';
-  margin-top: 3%;
+  background: none;
+  margin-top: 5%;
   text-align: center;
   font-size: 25px;
   font-weight: bolder;
@@ -952,6 +981,7 @@ h4 {
 
 #experience-title {
   font-family: 'Aileron-Thin';
+  background: none;
   margin-top: 1%;
   text-align: center;
   font-size: 25px;
@@ -960,6 +990,7 @@ h4 {
 
 #skills-title {
   font-family: 'Aileron-Thin';
+  background: none;
   margin-top: 1%;
   text-align: center;
   font-size: 25px;
@@ -969,7 +1000,7 @@ h4 {
 #school {
   font-family: 'Aileron-Thin';
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 5%;
   margin-top: 2%;
 }
@@ -977,7 +1008,7 @@ h4 {
 #work {
   font-family: 'Aileron-Thin';
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -985,7 +1016,7 @@ h4 {
 #skills {
   font-family: 'Aileron-Thin';
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 5%;
   margin-top: 2%;
 }
