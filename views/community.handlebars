@@ -17,8 +17,8 @@
                 <a class="nav-link" href="/messages">Messages</a>
             </li>
         </ul>
-        <a class="navbar-brand" id="profile-icon">
-        <img src="/img/headPic.png" href="/userprofile" alt="logo"
+        <a class="navbar-brand">
+        <img src="/img/headPic.png" href="/userprofile" id="profile-icon" alt="logo"
             style="width:70px;
             height:55px;"></a>
     </nav>
@@ -29,7 +29,7 @@
     <section id="entire-page">
 
         <div id="community-header">
-            <h1>Find developers in your area and collaborate on projects
+            <h1 style="margin-top: 0;">Find developers in your area and collaborate on projects
                 together!</h1>
         </div>
 
@@ -38,32 +38,60 @@
             <hr>
             <h2 id="communityh2">Available Projects</h2>
             <h3 id="communityh3">Click on a project and see if you can collaborate!</h3>
+            
             <div class="row" id="community-row">
-                <div class="card-projects">
-                    <img src="/img/img1.jpg" alt="House">
-                    <h3 class="no-space">55+</h3>
-                    <h3 class="no-space">Projects</h3>
+                <div class="flip-card">
+                   <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/img1.jpg" id="projects-img" alt="House" style="width:200px;height:220px;">
+                      </div>
+                   <div class="flip-card-back">
+                    <h3 class="no-space">FullStack Web App</h3>
+                    <h3 class="no-space2">Project created by John Doe</h3>
+                    <h3 class="no-space3">10+ contributors</h3>
+                    </div>
+                 </div>
                 </div>
 
-                <div class="card-projects">
-                    <img src="/img/img3.jpg" alt="House">
-                    <h3 class="no-space">55+</h3>
-                    <h3 class="no-space">Projects</h3>
+            <div class="flip-card">
+                   <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/img3.jpg" id="projects-img" alt="House" style="width:200px;height:220px;">
+                      </div>
+                   <div class="flip-card-back">
+                    <h3 class="no-space">Virtual Reality Game</h3>
+                    <h3 class="no-space2">Project created by VR Media</h3>
+                    <h3 class="no-space3">5 contributors</h3>
+                    </div>
+                 </div>
                 </div>
 
-
-                <div class="card-projects">
-                    <img src="/img/img2.jpg" alt="House">
-                    <h3 class="no-space">100+</h3>
-                    <h3 class="no-space">Projects</h3>
+                <div class="flip-card">
+                   <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/img2.jpg" id="projects-img" alt="House" style="width:200px;height:220px;">
+                      </div>
+                   <div class="flip-card-back">
+                      <h3 class="no-space">Dating Site</h3>
+                    <h3 class="no-space2">Project created by Tinder.co</h3>
+                    <h3 class="no-space3">30+ contributors</h3>
+                    </div>
+                 </div>
                 </div>
 
-
-                <div class="card-projects">
-                    <img src="/img/img1.jpg" alt="House">
-                    <h3 class="no-space">100+</h3>
-                    <h3 class="no-space">Projects</h3>
+                 <div class="flip-card">
+                   <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="/img/img1.jpg" id="projects-img" alt="House" style="width:200px;height:220px;">
+                      </div>
+                   <div class="flip-card-back">
+                    <h3 class="no-space">Finance Budgeting App</h3>
+                    <h3 class="no-space2">Project created by Chase Int.</h3>
+                    <h3 class="no-space3">18+ contributors</h3>
+                    </div>
+                 </div>
                 </div>
+
             </div>
 
         </section>
@@ -75,11 +103,11 @@
             <h2 id="communityh2">Industries</h2>
 
             <ul class="categories-icons" id="community-icons">
-                <li><i class="fas fa-laptop-code"></i></li>
-                <li><i class="fas fa-pen-nib"></i></li>
-                <li><i class="fas fa-film"></i></li>
-                <li><i class="fas fa-handshake"></i></li>
-                <li><i class="fas fa-user-lock"></i></li>
+                <li><i class="fa fa-laptop-code"></i></li>
+                <li><i class="fa fa-pen-nib"></i></li>
+                <li><i class="fa fa-film"></i></li>
+                <li><i class="fa fa-handshake"></i></li>
+                <li><i class="fa fa-user-lock"></i></li>
             </ul>
 
             <ul class="categories-list" id="community-list">
@@ -105,4 +133,7 @@
         </section>
 
     </section>
+
+
+
 </div>

@@ -23,6 +23,7 @@
   padding-bottom: 250px;
   height: 600px;
 }
+
 img {
   width: 300px;
   height: 320px;
@@ -186,6 +187,7 @@ span.psw {
 
 #community-header h1 {
   background: none;
+  color: white;
   margin: 20px 0 40px 0;
 }
 
@@ -193,18 +195,38 @@ span.psw {
   background: none;
   text-align: center;
   color: rgb(240, 240, 240);
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: normal;
   font-weight: bolder;
 }
 
 #communityh3 {
   background: none;
+  color: white;
+  font-size: 24px;
   letter-spacing: normal;
+  text-align: center;
 }
 
 .no-space {
   letter-spacing: normal;
+  color: black;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.no-space2 {
+  letter-spacing: normal;
+  color: rgb(27, 27, 27);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.no-space3 {
+  letter-spacing: normal;
+  color: rgb(0, 3, 156);
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 #member-nav {
@@ -215,6 +237,8 @@ span.psw {
   display: flex;
   justify-content: flex-end;
   margin-left: 62%;
+  width: 60px;
+  height: 45px;
 }
 
 #entire-page {
@@ -229,7 +253,8 @@ span.psw {
 
 h1 {
   font-family: "Aileron-Thin";
-  margin-top: 20px;
+  margin-top: 0;
+  padding-top: 3%;
   margin-bottom: 40px;
   color: rgb(255, 255, 255);
   font-size: 40px;
@@ -237,39 +262,21 @@ h1 {
   justify-content: center;
 }
 
-h2 {
-  font-family: "Aileron-Thin";
-  color: rgb(255, 255, 255);
-  font-size: 22px;
-  margin-left: 10px;
-  font-weight: bolder;
-  display: flex;
-  justify-content: flex-start;
-}
-
-h3 {
-  font-family: "Aileron-Thin";
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  margin-left: 10px;
-  font-weight: bolder;
-  display: flex;
-  justify-content: flex-start;
-} 
-
 * {
   box-sizing: border-box;
 }
 
-img {
-  height: 200px;
+#projects-img {
   width: 250px;
+  height: 220px;
+  border-radius: 5px;
+  
 }
 
 /* Float four columns side by side */
 
 #community-row {
-  margin-left: 10px;
+  height: 300px;
   margin-bottom: 8%;
   margin-top: 3%;
   display: flex;
@@ -279,16 +286,46 @@ img {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .card-projects {
+  .flip-card {
+    background-color: #2196F3;
     margin-bottom: 2%;
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(202, 202, 202, 0.795);
-    padding-left: 3px;
-    padding-right: 3px;
-    width: 300px;
-    text-align: center;
-    background-color: rgba(10, 10, 10, 0.815);
+    border-radius: 5px;
+    box-shadow: 0 8px 8px 0 rgba(202, 202, 202, 0.795);
+    border: 1px solid #f1f1f1;
+    perspective: 1000px
   }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 .fa {
@@ -299,18 +336,13 @@ img {
   height: 300px;
 }
 
-.fas {
-  width: 50px;
-  height: 30px;
-}
-
 #community-icons {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-evenly;
-  margin-top: 8%;
-  margin-bottom: 0;
+  margin-top: 5%;
+  margin-bottom: 3%;
 }
 
 #community-list {
@@ -322,6 +354,10 @@ img {
 
 li {
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
 }
 
 .content-map {
