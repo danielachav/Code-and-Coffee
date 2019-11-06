@@ -189,6 +189,15 @@ span.psw {
   margin: 20px 0 40px 0;
 }
 
+#communityh2 {
+  background: none;
+  text-align: center;
+  color: rgb(240, 240, 240);
+  font-size: 24px;
+  letter-spacing: normal;
+  font-weight: bolder;
+}
+
 #communityh3 {
   background: none;
   letter-spacing: normal;
@@ -209,7 +218,7 @@ span.psw {
 }
 
 #entire-page {
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
 }
 
 .header-container {
@@ -246,7 +255,7 @@ h3 {
   font-weight: bolder;
   display: flex;
   justify-content: flex-start;
-}
+} 
 
 * {
   box-sizing: border-box;
