@@ -65,7 +65,7 @@
         <div class="member-row">
 
             {{#each members}}
-            <div class="card">
+            <div class="users-card">
                 <img src="/img/namndi.jpg" alt="user">
                 <h1>{{firstName}}</h1>
                 <p class="location">{{location}}</p>
@@ -81,13 +81,31 @@
             </div>
             {{/each}}
         
-            {{!-- <div class="card">
-                <img src="clonie.jpg" alt="John">
-                <h1>Clonie Villani</h1>
+                  <!-- The userprofiles -->
+
+<!--            
+<div class="members-row">
+        <div class="users-card">
+            <img src="/img/namndi.jpg" alt="user">
+            <h1 id="profilename">Nnamdi Iroham</h1>
+            <p class="jobtitle">Front End Developer</p>
+            <p class="skillset">Javascript, MySQL</p>
+            <p class="education">Harvard University</p>
+            <p class="location">Dallas, TX</p>
+            <div style="margin: 24px 0;">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <p><button>Collaborate</button></p>
+        </div>
+        <div class="users-card">
+                <img src="/img/clonie.jpg" alt="user">
+                <h1 id="profilename">Clonie Villani</h1>
                 <p class="jobtitle">Front End Developer</p>
-                <p>PHP, Javascript, Ruby, MySQL</p>
-                <p>Harvard University</p>
-                <p>Dallas, TX</p>
+                <p class="skillset">PHP, Javascript, Ruby, MySQL</p>
+                <p class="education">Harvard University</p>
+                <p class="location">Dallas, TX</p>
                 <div style="margin: 24px 0;">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -95,39 +113,41 @@
                 </div>
                 <p><button>Collaborate</button></p>
             </div>
+    </div>
+
+
+    <div class="members-row">
+            <div class="users-card">
+                    <img src="/img/katherine.jpg" alt="user">
+                    <h1 id="profilename">Katherine Ray</h1>
+                    <p class="jobtitle">Front End Developer</p>
+                    <p>PHP, Javascript, Ruby, MySQL</p>
+                    <p>Harvard University</p>
+                    <p>Dallas, TX</p>
+                    <div style="margin: 24px 0;">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>Collaborate</button></p>
+                </div>
+
+                <div class="users-card">
+                        <img src="/img/daniela.jpg" alt="user">
+                        <h1 id="profilename">Daniela Chavez</h1>
+                        <p class="jobtitle">Front End Developer</p>
+                        <p class="skillset">PHP, Javascript, Ruby, MySQL</p>
+                        <p class="education">Harvard University</p>
+                        <p class="location">Dallas, TX</p>
+                        <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                        <p><button>Collaborate</button></p>
+                    </div>
+
         </div>
 
-
-        <div class="row">
-            <div class="card">
-                <img src="/img/katherine.jpg" alt="John">
-                <h1>Katherine Ray</h1>
-                <p class="jobtitle">Front End Developer</p>
-                <p>PHP, Javascript, Ruby, MySQL</p>
-                <p>Harvard University</p>
-                <p>Dallas, TX</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </div>
-                <p><button>Collaborate</button></p>
-            </div>
-            {{#each users}}
-            <div class="card">
-                <img src={{user.img}} alt="John">
-                <h1>{{users.firstName}}{{users.lastName}}</h1>
-                <p class="jobtitle">Front End Developer</p>
-                <p>PHP, Javascript, Ruby, MySQL</p>
-                <p>Harvard University</p>
-                <p>Dallas, TX</p>
-                <div style="margin: 24px 0;">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </div>
-                <p><button>Collaborate</button></p>
-            </div>
-            {{/each}} --}}
-
-        </div>
+        
+</div>
