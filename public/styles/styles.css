@@ -370,6 +370,16 @@ iframe {
   margin-top: 3%;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(46, 46, 46, 0.788);
+  color: white;
+  text-align: center;
+}
+
 /* END OF COMMUNITY DASHBOARD CSS */
 
 /* START OF MEMBERS CSS */
