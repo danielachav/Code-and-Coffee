@@ -335,7 +335,7 @@ iframe {
 
 /* END OF COMMUNITY DASHBOARD CSS */
 
-/* START OF MEMBERSHIP CSS */
+/* START OF MEMBERS CSS */
 #membersBG {
   background-image: url("/img/coffelaptop.jpg");
   background-size: cover;
@@ -360,15 +360,15 @@ iframe {
 }
 
 .search-form {
-  /* position: relative; */
-  margin-top: 5px;
-  /* top: 20%;
+  position: relative;
+  margin-top: 55px;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 
-#membershipForm {
+form {
   /* font size 0 to remove inline-block whitespcae*/
   font-size: 0;
   max-width: 50rem;
@@ -378,6 +378,7 @@ iframe {
 .inp-wrap {
   display: inline-block;
 }
+
 
 /* very messy "grid" styles */
 
@@ -419,6 +420,7 @@ iframe {
   width: 100%;
 }
 
+
 /* input and label styles*/
 
 label {
@@ -426,7 +428,7 @@ label {
   display: inline-block;
   vertical-align: middle;
   line-height: 3.125rem;
-  background: #2f2f2f;
+  background: #2F2F2F;
   cursor: pointer;
   text-align: center;
   font-weight: 300;
@@ -435,7 +437,7 @@ label {
 }
 
 label:hover {
-  background: #e1e1e1;
+  background: #E1E1E1;
 }
 
 .search-label {
@@ -459,6 +461,7 @@ select:focus {
   box-shadow: inset 0 0 0 5px rgb(94, 94, 94);
 }
 
+
 /* select menu styles */
 
 .cat-wrap {
@@ -467,10 +470,11 @@ select:focus {
   z-index: 1;
 }
 
+
 /* triangle */
 
 .cat-wrap::after {
-  content: "\25BC";
+  content: '\25BC';
   position: absolute;
   top: 0.6rem;
   right: 0.5em;
@@ -491,7 +495,9 @@ option {
   margin: 0.6em 0;
 }
 
+
 /* search button and icon styles */
+
 
 /* remove mozilla button styles */
 
@@ -582,8 +588,8 @@ button::-moz-focus-inner {
   position: relative;
   margin-left: 580px;
   margin-top: 20px;
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #161616e5;
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #161616e5; 
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -591,118 +597,147 @@ button::-moz-focus-inner {
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
+
+
 
 /* USER CARDS PROFILE SECTION */
 
-/* .member-row {
-     display: flex;
-     flex-direction: row;
+.members-row {
+   display: flex;
+   flex-direction: row;
 }
 
-.card {
-    display: flex;
+.users-card {
+  display: flex;
+  background-color: white;
 }
 
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Style the search field
-  form.example input[type=text] {
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 500px;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  box-sizing: border-box;
+}
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    max-height: 500px;
-    margin: auto;
-    text-align: center;
-    font-family: 'Aileron-Thin';
-    margin-top: 130px;
-  }
+/* Style the search field */
+form.example input[type=text] {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 500px;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.users-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  max-width: 300px;
+  max-height: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Aileron-Thin';
+  margin-top: 130px;
+}
 
 img {
-    width: 300px;
-    height: 200px;
+  width: 300px;
+  height: 200px;
+}
+
+#profilename {
+  color: grey;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#jobtitle {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#skillset {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#education {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#location {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 h1 {
-    color: black;
-    font-family: 'Aileron-Thin';
-    font-weight: bolder;
-    font-size: 25px;
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
 }
-  
-  .jobtitle {
-    color: grey;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
 
-/* END OF MEMBERSHIP CSS */
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/* END OF MEMBERS CSS */
+
 
 /* CHAT MESSAGES CSS*/
 #messagesBG {
