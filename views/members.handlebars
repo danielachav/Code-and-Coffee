@@ -34,13 +34,13 @@
                     <label for="categories" class="grid-20">in</label>
                     <select name="search categories" id="categories"
                         class="grid-80" placeholder="Location...">
-                        <option value="FrontEnd" selected>City</option>
-                        <option value="html/css">Los Angeles</option>
-                        <option value="javascript">Chicago</option>
-                        <option value="datascience">Dallas</option>
-                        <option value="fullstack">San Francisco</option>
-                        <option value="backend">New York</option>
-                        <option value="webdesign">Miami</option>
+                        <option value="selectedcity" selected>City</option>
+                        <option value="losangeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="dallas">Dallas</option>
+                        <option value="sanfrancisco">San Francisco</option>
+                        <option value="newyork">New York</option>
+                        <option value="miami">Miami</option>
                     </select>
                 </p>
                 <p class="inp-wrap submit-wrap">
@@ -62,16 +62,16 @@
 
 
         <!-- The userprofiles -->
-        <div class="row">
+        <div class="member-row">
 
             {{#each members}}
             <div class="card">
-                <img src="/img/namndi.jpg" alt="John">
+                <img src="/img/namndi.jpg" alt="user">
                 <h1>{{firstName}}</h1>
+                <p class="location">{{location}}</p>
                 <p class="jobtitle">{{jobTitle}}</p>
-                <p>Javascript, MySQL</p>
-                <p>Harvard University</p>
-                <p>Dallas, TX</p>
+                <p class="education">{{education}}</p>
+                <p class="skillset">{{skillset}}</p>
                 <div style="margin: 24px 0;">
                     <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -80,11 +80,6 @@
                 <p><button>Collaborate</button></p>
             </div>
             {{/each}}
-        
-        
-        
-        
-        
         
             {{!-- <div class="card">
                 <img src="clonie.jpg" alt="John">
