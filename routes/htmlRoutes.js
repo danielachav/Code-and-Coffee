@@ -21,18 +21,19 @@ module.exports = function (app) {
       res.render("members", {
         members: dbResponse
       });
+      console.log(dbResponse)
     });
   });
   app.get("/community", function(req, res) {
     res.render("community");
   });
-  app.get("/members", function(req, res) {
-    db.User.findAll({}).then(function(data){
-      res.render("members", {users: data});
-    })
-  });
+
   app.get("/messages", function(req, res) {
     res.render("messages");
+  });
+
+  app.get("/userprofile", function(req, res) {
+    res.render("userprofile");
   });
   // Render 404 page for any unmatched routes
   app.get("*", function (req, res) {
