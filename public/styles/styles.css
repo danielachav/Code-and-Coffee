@@ -612,6 +612,7 @@ button::-moz-focus-inner {
 
 .users-card {
   display: flex;
+  background-color: white;
 }
 
 
@@ -656,6 +657,7 @@ form.example::after {
 
 .users-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
   max-width: 300px;
   max-height: 500px;
   margin: auto;
@@ -669,17 +671,45 @@ img {
   height: 200px;
 }
 
+#profilename {
+  color: grey;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#jobtitle {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#skillset {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#education {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#location {
+  color: black;
+  font-family: 'Aileron-Thin';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 h1 {
   color: black;
   font-family: 'Aileron-Thin';
   font-weight: bolder;
-  font-size: 25px;
-}
-
-.jobtitle {
-  color: grey;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 button {
@@ -706,9 +736,8 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
-
-
 /* END OF MEMBERS CSS */
+
 
 /* CHAT MESSAGES CSS*/
 #messagesBG {
